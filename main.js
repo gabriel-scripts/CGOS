@@ -1,8 +1,9 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
-const isDev = require('electron-is-dev');
 
-function createWindow() {
+async function createWindow() {
+  const isDev = await import('electron-is-dev');
+
   const mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
@@ -13,12 +14,12 @@ function createWindow() {
   });
 
   mainWindow.loadURL(
-    isDev
+    isDev.default
       ? 'http://localhost:3000'
-      : `file://${path.join(__dirname, '../build/index.html')}`
+      : `file://${path.join(__dirname, '../cgos-app/public/index.html')}`
   );
 
-  if (isDev) {
+  if (isDev.default) {
     mainWindow.webContents.openDevTools();
   }
 }
