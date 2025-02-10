@@ -1,5 +1,7 @@
 //import Image from "next/image";
-import { commandblock } from '../components/commandBlock/page'
+
+import { CommandButton } from "@/components/commandBlock/page";
+
 
 export default function Home() {
   return (
@@ -10,8 +12,8 @@ export default function Home() {
           <p>concept</p>
         </div>
 
-        <commandblock/>
-    
+        <CommandButton/>
+        
       </main>
     </section>
    
