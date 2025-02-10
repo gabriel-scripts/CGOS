@@ -9,5 +9,5 @@ export function Header(){
             </div>
             
         </section>
-    );
+    )
 }
