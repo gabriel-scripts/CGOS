@@ -90,10 +90,14 @@ body {
 }
 
 .commandBlockdiv{
+  position: relative;
   height: 141px;
-  width: 83px  ;
+  width: 83px;
 }
 
 .commandBlock{
-
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  background-color: #19194F;
 }
