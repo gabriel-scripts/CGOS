@@ -1,8 +1,6 @@
 'use client'
 
 import  { useState } from 'react';
-import { ipcRenderer } from 'electron';
-
 export function CommandButton(){
 
     const [wasMoved, setWasMoved] = useState(false);
@@ -45,7 +43,6 @@ export function CommandButton(){
   
     const handleClick = () => {    
       if (!isDragging && !wasMoved) {
-        ipcRenderer.send('open-terminal-window');
       }
     };
 

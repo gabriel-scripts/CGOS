@@ -1,7 +1,4 @@
-//import Image from "next/image";
-
-import { CommandButton } from "@/app/components/commandBlock/page";
-
+import { CommandButton } from "./components/commandBlock/page";
 
 export default function Home() {
   return (
