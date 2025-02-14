@@ -1,0 +1,93 @@
+:root {
+  --background: #05050F;
+  --foreground: #171717;
+
+  --light-background: #0D0D26; 
+  --border-color: #ededed;
+
+  --command-block-color: #19194F;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #05050F;
+    --foreground: #ededed;
+  }
+}
+
+*{
+   margin: 0;
+   padding: 0;
+}
+
+.main{
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;  
+
+  display: grid;
+            grid-template-areas: 
+                "header header"
+                "sidebar main";
+            grid-template-rows: auto 1fr;
+            grid-template-columns: auto 1fr;
+            height: 100vh;
+}
+
+.mainApp{
+  grid-area: main;
+
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 10%;
+  margin-left: 10%;
+
+  width: 100%;
+}
+
+.headerSection{
+  grid-area: header;
+  background-color: var(--light-background);
+}
+#headerNav{
+  height: 100%;
+  size: 100%;
+}
+.HeaderDiv{
+  height: 50px;
+}
+
+.leftbarSection{
+  grid-area: sidebar;
+  margin-right: 10px;
+  background-color: var(--light-background);
+  width: 241px;
+  height: auto;
+}
+
+.border_bottom{
+  box-sizing: border-box;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--border-color);
+}
+.border_right{
+  box-sizing: border-box;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: var(--border-color);
+}
+
+.commandBlockdiv{
+  position: relative;
+  height: 141px;
+  width: 83px;
+}
+.commandBlock{
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  background-color: #19194F;
+}
