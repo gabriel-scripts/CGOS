@@ -1,6 +1,16 @@
-# An alias alternative
+# About
 
-- Enhance your commands and environment with custom themes for scripts and commands.
+The Command GUI Operating System (CGOS) is a project that aims to provide a simple and intuitive interface for running commands and scripts on your computer. The project is built using the Tauri framework, which allows you to create desktop applications using web technologies like HTML, CSS, and JavaScript.
+
+## An alias alternative
+> Enhance your commands and environment with custom themes for scripts and commands.
+
+CGOS is an alternative to using alias in your .bashrc. With CGOS, you can create custom commands and scripts that can be run with a single click. You can also organize your commands into categories and subcategories to keep things organized.
+
+
+## Custom themes
+
+CGOS allows you to create custom themes for your commands and scripts. You can choose from a variety of pre-built themes or create your own using CSS. This allows you to customize the look and feel of your commands to suit your preferences.
 
 ## Tauri Project
 
@@ -14,7 +24,6 @@ Make sure you have the following tools installed on your system:
 - [npm](https://www.npmjs.com/)
 - [Rust](https://www.rust-lang.org/tools/install)
 - [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
-
 - [Tauri CLI](https://tauri.app/v1/guides/getting-started/prerequisites#installing-tauri-cli)
 
 ## Installation
