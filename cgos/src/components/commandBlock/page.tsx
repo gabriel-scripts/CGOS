@@ -1,9 +1,10 @@
 'use client'
 
 import  { useState } from 'react';
+import { invoke } from '@tauri-apps/api/core';
+import { Command } from '@tauri-apps/plugin-shell';
 
 export function CommandButton(){
-
     const [wasMoved, setWasMoved] = useState(false);
     const [isDragging, setIsDragging] = useState(false);
     
@@ -44,6 +45,28 @@ export function CommandButton(){
   
     const handleClick = () => {    
       if (!isDragging && !wasMoved) {
+        
+
+        // call para o Rust 
+        invoke('greet', { name: 'World' })
+        .then((response) => {
+            console.log(response);
+            alert(response);
+        })
+        .catch((error) => {
+            console.error(error);
+        });
+
+        const command = Command.create('sh', ['-c', 'echo Hello from bash']);
+        command.execute()
+            .then((output) => {
+                console.log('Command output:', output);
+                alert(`Command output: ${output.stdout}`);
+            })
+            .catch((error) => {
+                console.error('Command error:', error);
+            });
+
       }
     };
 
