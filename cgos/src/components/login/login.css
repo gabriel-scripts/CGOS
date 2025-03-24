@@ -1,0 +1,189 @@
+:root {
+    /* COLOR PALLETE */
+    --darker-color: #05050F;
+    --dark-color: #0D0D26;
+    --medium-color: #19194F;
+    --light-color: #293B80;
+    --ligher-color: #BBBBBB;
+    
+    --hover-color: #0078a6;
+    --shadow-color: 0px -5px 100px 10px rgba(0, 0, 0, 0.24);
+    --gradient-color: linear-gradient(180deg, var(--medium-color) 0%, var(--light-color) 64%, var(--medium-color) 100%);
+    
+    --background: #05050F;
+    --foreground: #171717;
+  
+    --light-background: #0D0D26; 
+    --border-color: #ededed;
+  
+    --command-block-color: #19194F;
+
+    --font-family: 'Open Sans', sans-serif;
+    --tittle-font-family: 'Poppins', sans-serif;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+.skip-register-div{
+    display: flex;
+    margin: 50px;
+}
+
+.skip-button-div{
+    height: 50px;
+}
+
+.register-button-div{
+    height: 50px;
+    margin-left: 130px;
+}
+
+.text-primary-color{
+    color: var(--ligher-color);
+}
+
+body{
+    backdrop-filter: blur(25px);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.button-default-hover:hover{
+    background-color: var(--hover-color);
+    cursor: pointer;
+    transition: .1s;
+}
+
+.clear-button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.image-logo{
+    width: 100px;
+    height: 100px;
+}
+
+#entrar{
+    top: 70px;
+    left: 25px;
+}
+
+.title-configuration {
+    font-size: 22px;
+    font-family: var(--tittle-font-family);
+    color: var(--ligher-color);
+}
+
+.login-body {
+    transition: .14s;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: blur(5);
+    background-color: var(--darker-color);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("");
+    /*background: rgb(18,55,42);
+    background: linear-gradient(180deg, rgba(18,55,42,1) 0%, rgba(79,111,82,1) 64%, rgba(115,144,114,1) 100%); 
+    */
+    width: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    backdrop-filter: blur(8px);
+    padding: 6px;
+    width: 350px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: var(--shadow-color);
+    background-color: var(--dark-color);
+}
+
+form{
+    position: absolute;
+    margin-top: 80px;
+    transition: .5s;
+    width: 300px;
+    height: 300px;
+}
+
+.buttonsForms{
+    height: auto;
+    margin-top: 20px;
+    position: relative;
+    border-radius: 30px;
+    box-shadow: var(--shadow-color);
+}
+
+.buttonsForms button{
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    position: relative;
+    padding: 10px 29px;
+}
+
+.btnColor{
+    position: absolute;
+    width: 118px;
+    height: 100%;
+    background: rgb(18,55,420);
+    background: var(--gradient-color);
+    border-radius: 30px;
+    transition: .3s;
+}
+
+input[type="text"]{
+    border: none;
+    margin-top: 25px;
+    border-radius: 60px;
+    padding: 8px 0 8px 35px;
+    outline: none;
+    width: 100%;
+}
+
+input[type="password"]{
+    border: none;
+    margin-top: 35px;
+    border-radius: 60px;
+    padding: 8px 0 8px 35px;
+    outline: none;
+    width: 100%;
+}
+
+button[type="submit"] {
+    background-color: var(--light-color);
+    color: var(--ligher-color);
+    border: none;
+    width: 100%;
+    padding: 8px 0 8px 15px;
+    font-size: 15px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.help-text{
+    margin-top: 100px;
+    margin-left: 10px;
+    align-self: center;
+    display: block;
+    margin-top: 0.5rem;
+    color:rgb(189, 189, 189);
+    font-size: 0.875rem;
+}
